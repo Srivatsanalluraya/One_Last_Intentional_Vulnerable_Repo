@@ -55,13 +55,6 @@ def fetch_data(url):
     return requests.get(url)
 
 
-# -------------------------------
-# 7. Path traversal pattern
-# -------------------------------
-def read_file(filename):
-    # ⚠ user-controlled file access
-    with open(f"./data/{filename}", "r") as f:
-        return f.read()
 
 
 # -------------------------------
