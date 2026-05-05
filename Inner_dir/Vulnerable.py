@@ -2,6 +2,7 @@ import os
 import subprocess
 import sqlite3
 import pickle
+import matplotlib
 import requests
 
 # -------------------------------
@@ -64,12 +65,7 @@ def read_file(filename):
         return f.read()
 
 
-# -------------------------------
-# 8. subprocess misuse
-# -------------------------------
-def run_subprocess(cmd):
-    # ⚠ shell=True
-    subprocess.call(cmd, shell=True)
+
 
 
 # -------------------------------
